@@ -50,19 +50,22 @@ console.log(shuffledkbs);
 
 var technique = new SpeechSynthesisUtterance();
 
+// Get the 'speak' button
+var button = document.getElementById('speak');
 
-(function theLoop (i) {
-    setTimeout(function () {
-        technique.voiceURI = "fiona";
-        technique.lang = "en-scotland";
-        technique.text = shuffledkbs[i-1];
-        speechSynthesis.speak(technique);
-        if (--i) {
-            theLoop(i);
-        }
-    }, 1000);
-})(3);
-
+button.addEventListener('click', function(e) {
+    (function theLoop (i) {
+        setTimeout(function () {
+            technique.voiceURI = "fiona";
+            technique.lang = "en-scotland";
+            technique.text = shuffledkbs[i-1];
+            speechSynthesis.speak(technique);
+            if (--i) {
+                theLoop(i);
+            }
+        }, 1000);
+    })(3);
+});
 
 /*
 for (var i=0; i<5; i++) {
