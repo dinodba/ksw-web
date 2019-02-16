@@ -45,8 +45,7 @@ function shuffle(arra1) {
     return arra1;
 }
 
-const shuffledkbs = shuffle(kibonsoo);
-console.log(shuffledkbs);
+
 
 var technique = new SpeechSynthesisUtterance();
 
@@ -54,6 +53,11 @@ var technique = new SpeechSynthesisUtterance();
 var button = document.getElementById('speak');
 
 button.addEventListener('click', function(e) {
+    var secondsDelay = document.getElementById("speakDelay").value*1000 || 2000;
+    console.log(secondsDelay);
+    const shuffledkbs = shuffle(kibonsoo);
+    console.log(shuffledkbs);
+    console.log(shuffledkbs.length);
     (function theLoop (i) {
         setTimeout(function () {
             technique.voiceURI = "fiona";
@@ -63,8 +67,8 @@ button.addEventListener('click', function(e) {
             if (--i) {
                 theLoop(i);
             }
-        }, 1000);
-    })(3);
+        }, secondsDelay);
+    })(shuffledkbs.length);
 });
 
 /*

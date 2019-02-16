@@ -1,24 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <title>Kuk Sool Won Techniques</title>
-</head>
-<body class="bg-dark text-white">
-    <div class="container text-center">
-        <div class="form-group">
-            <select id="voice-select" class="form-control form-control-lg"></select>
+    <title>KSW Techniques</title>
+  </head>
+  <body class="bg-dark text-white">
+      <div class="container">
+        <!--- Top row - Logo -->
+        <div class="row justify-content-md-center">
+            <img src="img/WKSA_Logo-1.gif" alt="WKSA Logo" class="m-5">
         </div>
-        <button id="speak" class="btn btn-light btn-lg btn-block">Speak</button>
-    </div>
+        <!--- Second row - Input form and button -->
 
+        <div class="input-group input-group-lg mb-3 mt-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-pause"></i>
+                </span>
+            </div>
+            <input type="number" class="form-control" placeholder="2" name="speakDelay" id="speakDelay">
+        </div>
+<!-- Input for length of time
+     I'm not sure this is practical any more
+     Might include later but possibly change it to
+     Number of times the whole thing should be repeated
+     font awesome icon would be redo-alt 
+        <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-clock"></i>
+                </span>
+            </div>
+            <input type="number" class="form-control" placeholder="0" name="timeTotal">
+        </div>
+-->            
+
+        <div class="custom-control custom-check">
+            <input type="checkbox" name="KBS" id="technique1" autocomplete="off" checked>
+            <label>Ki Bohn Soo</label>
+        </div>
+        <div class="custom-control custom-check">
+            <input type="checkbox" name="SMS" id="technique2" autocomplete="off">
+            <label>Sohn Mohk Soo</label>
+        </div>
+
+        <input type="submit" value="Start" class="btn btn-primary btn-block btn-lg mt-3" id="speak">
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
