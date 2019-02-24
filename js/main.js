@@ -39,6 +39,85 @@ const sohnmohksoo =    ['sohn mock soo one',
                         'sohn mock soo eleven'
                         ];
 
+// Init the Eue Bohk Soo array
+const euebohksoo =  ['oobok soo one',
+                     'oobok soo two',
+                     'oobok soo three',
+                     'oobok soo four',
+                     'oobok soo five',
+                     'oobok soo six',
+                     'oobok soo seven',
+                     'oobok soo eight',
+                     'oobok soo nine',
+                     'oobok soo ten',
+                     'oobok soo eleven',
+                     'oobok soo twelve',
+                     'oobok soo thirteen'
+                    ];
+
+// Init the Sohn Mohk Soo array
+const ahnsohnmohksoo =     ['ann sohnmock soo one',
+                            'ann sohnmock soo two',
+                            'ann sohnmock soo three',
+                            'ann sohnmock soo four',
+                            'ann sohnmock soo five',
+                            'ann sohnmock soo six'
+                            ];
+
+// Init the Maek Chi Ki array
+const maekchiki =      ['makcheekeh one',
+                        'makcheekeh two',
+                        'makcheekeh three',
+                        'makcheekeh four',
+                        'makcheekeh five',
+                        'makcheekeh six',
+                        'makcheekeh seven',
+                        'makcheekeh eight',
+                        'makcheekeh nine',
+                        'makcheekeh ten',
+                        'makcheekeh eleven',
+                        'makcheekeh twelve',
+                        'makcheekeh thirteen',
+                        'makcheekeh fourteen',
+                        'makcheekeh fifteen'
+                        ];
+
+// Init the Maek Cha Ki array
+const maekchaki =      ['makchaah keh one',
+                        'makchaah keh two',
+                        'makchaah keh three',
+                        'makchaah keh four',
+                        'makchaah keh five',
+                        'makchaah keh six',
+                        'makchaah keh seven',
+                        'makchaah keh eight',
+                        'makchaah keh nine',
+                        'makchaah keh ten',
+                        'makchaah keh eleven',
+                        'makchaah keh twelve',
+                        'makchaah keh thirteen',
+                        'makchaah keh fourteen',
+                        'makchaah keh fifteen'
+                        ];
+
+// Init the Joo Muhk Maga Ki Bon Soo array
+const joomuhk =      ['joo muhk maga ki bon soo one',
+                        'joo muhk maga ki bon soo two',
+                        'joo muhk maga ki bon soo three',
+                        'joo muhk maga ki bon soo four',
+                        'joo muhk maga ki bon soo five',
+                        'joo muhk maga ki bon soo six',
+                        'joo muhk maga ki bon soo seven',
+                        'joo muhk maga ki bon soo eight',
+                        'joo muhk maga ki bon soo nine',
+                        'joo muhk maga ki bon soo ten',
+                        'joo muhk maga ki bon soo eleven',
+                        'joo muhk maga ki bon soo twelve',
+                        'joo muhk maga ki bon soo thirteen',
+                        'joo muhk maga ki bon soo fourteen',
+                        'joo muhk maga ki bon soo fifteen'
+                        ];
+
 function shuffle(arra1) {
     let ctr = arra1.length;
     let temp;
@@ -67,6 +146,11 @@ button.addEventListener('click', function(e) {
     var spkCheck = document.getElementById('technique1');
     var kbsCheck = document.getElementById('technique2');
     var smsCheck = document.getElementById('technique3');
+    var obsCheck = document.getElementById('technique4');
+    var asmsCheck = document.getElementById('technique5');
+    var mckCheck = document.getElementById('technique6');
+    var mck2Check = document.getElementById('technique7');
+    var jmmCheck = document.getElementById('technique8');
     if (spkCheck.checked == true) {
         allTechniques = allTechniques.concat(sonpaki);
     }
@@ -76,9 +160,23 @@ button.addEventListener('click', function(e) {
     if (smsCheck.checked == true) {
         allTechniques = allTechniques.concat(sohnmohksoo);
     }
+    if (obsCheck.checked == true) {
+        allTechniques = allTechniques.concat(euebohksoo);
+    }
+    if (asmsCheck.checked == true) {
+        allTechniques = allTechniques.concat(ahnsohnmohksoo);
+    }
+    if (mckCheck.checked == true) {
+        allTechniques = allTechniques.concat(maekchiki);
+    }
+    if (mck2Check.checked == true) {
+        allTechniques = allTechniques.concat(maekchaki);
+    }
+    if (jmmCheck.checked == true) {
+        allTechniques = allTechniques.concat(joomuhk);
+    }
     console.log(kbsCheck.checked);
     console.log(allTechniques);
-    const shuffledkbs = shuffle(kibonsoo);
     const shuffledTechniques = shuffle(allTechniques);
     console.log(shuffledTechniques);
     console.log(allTechniques.length);
