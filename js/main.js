@@ -1,6 +1,13 @@
 
+// Init the Sohn Ppae Ki array
+const sonpaki = ['sohn pa key one',
+                 'sohn pa key two',
+                 'sohn pa key three',
+                 'sohn pa key four',
+                 'sohn pa key five'
+                ];
 
-// Init the Ki Bohn Soo array
+// Init the Ki Bon Soo array
 const kibonsoo =   ['key bon soo one',
                     'key bon soo two',
                     'key bon soo three',
@@ -15,7 +22,8 @@ const kibonsoo =   ['key bon soo one',
                     'key bon soo twelve',
                     'key bon soo thirteen',
                     'key bon soo fourteen',
-                    'key bon soo fifteen'];
+                    'key bon soo fifteen'
+                    ];
 
 // Init the Sohn Mohk Soo array
 const sohnmohksoo =    ['sohn mock soo one',
@@ -28,7 +36,8 @@ const sohnmohksoo =    ['sohn mock soo one',
                         'sohn mock soo eight',
                         'sohn mock soo nine',
                         'sohn mock soo ten',
-                        'sohn mock soo eleven'];
+                        'sohn mock soo eleven'
+                        ];
 
 function shuffle(arra1) {
     let ctr = arra1.length;
@@ -49,40 +58,42 @@ function shuffle(arra1) {
     return arra1;
 }
 
-// Get the 'speak' button
-var button = document.getElementById('speak');
-
 var technique = new SpeechSynthesisUtterance();
 
+var button = document.getElementById('speak');
 
 button.addEventListener('click', function(e) {
-    var secondsDelay = document.getElementById("speakDelay").value*1000 || 2000;
-    console.log(secondsDelay);
+    var allTechniques = [];
+    var spkCheck = document.getElementById('technique1');
+    var kbsCheck = document.getElementById('technique2');
+    var smsCheck = document.getElementById('technique3');
+    if (spkCheck.checked == true) {
+        allTechniques = allTechniques.concat(sonpaki);
+    }
+    if (kbsCheck.checked == true) {
+        allTechniques = allTechniques.concat(kibonsoo);
+    }
+    if (smsCheck.checked == true) {
+        allTechniques = allTechniques.concat(sohnmohksoo);
+    }
+    console.log(kbsCheck.checked);
+    console.log(allTechniques);
     const shuffledkbs = shuffle(kibonsoo);
-    console.log(shuffledkbs);
-    console.log(shuffledkbs.length);
+    const shuffledTechniques = shuffle(allTechniques);
+    console.log(shuffledTechniques);
+    console.log(allTechniques.length);
+    var secondsDelay = document.getElementById("speakDelay").value || 2;
+    console.log(secondsDelay);
     (function theLoop (i) {
+        technique.voiceURI = "fiona";
+        technique.lang = "en-scotland";
+        technique.rate = 1.2;
+        technique.text = shuffledTechniques[i-1];
+        speechSynthesis.speak(technique);
         setTimeout(function () {
-            technique.voiceURI = "Fiona";
-            technique.lang = "en-scotland";
-            technique.text = shuffledkbs[i-1];
-            speechSynthesis.speak(technique);
             if (--i) {
                 theLoop(i);
             }
-        }, secondsDelay);
-    })(shuffledkbs.length);
+        }, 1000*secondsDelay);
+    })(allTechniques.length);
 });
-
-/*
-for (var i=0; i<5; i++) {
-    speechSynthesis.speak(new SpeechSynthesisUtterance(shuffledkbs[i]))
-}
-
-
-// Init SpeachSynth APE
-const synth = window.speechSynthesis;
-
-var randkbs = kibonsoo[Math.floor(Math.random() * kibonsoo.length)];
-
-*/
