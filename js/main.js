@@ -101,21 +101,21 @@ const maekchaki =      ['makchaah ghi one',
                         ];
 
 // Init the Joo Muhk Maga Ki Bon Soo array
-const joomuhk =      ['joo muhk maga ki bon soo one',
-                        'joo muhk maga ki bon soo two',
-                        'joo muhk maga ki bon soo three',
-                        'joo muhk maga ki bon soo four',
-                        'joo muhk maga ki bon soo five',
-                        'joo muhk maga ki bon soo six',
-                        'joo muhk maga ki bon soo seven',
-                        'joo muhk maga ki bon soo eight',
-                        'joo muhk maga ki bon soo nine',
-                        'joo muhk maga ki bon soo ten',
-                        'joo muhk maga ki bon soo eleven',
-                        'joo muhk maga ki bon soo twelve',
-                        'joo muhk maga ki bon soo thirteen',
-                        'joo muhk maga ki bon soo fourteen',
-                        'joo muhk maga ki bon soo fifteen'
+const joomuhk =      ['joo muhk magai ki bon soo one',
+                        'joo muhk magai ki bon soo two',
+                        'joo muhk magai ki bon soo three',
+                        'joo muhk magai ki bon soo four',
+                        'joo muhk magai ki bon soo five',
+                        'joo muhk magai ki bon soo six',
+                        'joo muhk magai ki bon soo seven',
+                        'joo muhk magai ki bon soo eight',
+                        'joo muhk magai ki bon soo nine',
+                        'joo muhk magai ki bon soo ten',
+                        'joo muhk magai ki bon soo eleven',
+                        'joo muhk magai ki bon soo twelve',
+                        'joo muhk magai ki bon soo thirteen',
+                        'joo muhk magai ki bon soo fourteen',
+                        'joo muhk magai ki bon soo fifteen'
                         ];
 
 function shuffle(arra1) {
