@@ -1,10 +1,10 @@
 
 // Init the Sohn Ppae Ki array
-const sonpaki = ['sohn pa gi one',
-                 'sohn pa gi two',
-                 'sohn pa gi three',
-                 'sohn pa gi four',
-                 'sohn pa gi five'
+const sonpaki = ['sohn pa ghi one',
+                 'sohn pa ghi two',
+                 'sohn pa ghi three',
+                 'sohn pa ghi four',
+                 'sohn pa ghi five'
                 ];
 
 // Init the Ki Bon Soo array
