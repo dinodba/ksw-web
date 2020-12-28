@@ -65,21 +65,21 @@ const ahnsohnmohksoo =     ['ann sohnmock soo one',
                             ];
 
 // Init the Maek Chi Ki array
-const maekchiki =      ['makcheekeh one',
-                        'makcheekeh two',
-                        'makcheekeh three',
-                        'makcheekeh four',
-                        'makcheekeh five',
-                        'makcheekeh six',
-                        'makcheekeh seven',
-                        'makcheekeh eight',
-                        'makcheekeh nine',
-                        'makcheekeh ten',
-                        'makcheekeh eleven',
-                        'makcheekeh twelve',
-                        'makcheekeh thirteen',
-                        'makcheekeh fourteen',
-                        'makcheekeh fifteen'
+const maekchiki =      ['makcheegheh one',
+                        'makcheegheh two',
+                        'makcheegheh three',
+                        'makcheegheh four',
+                        'makcheegheh five',
+                        'makcheegheh six',
+                        'makcheegheh seven',
+                        'makcheegheh eight',
+                        'makcheegheh nine',
+                        'makcheegheh ten',
+                        'makcheegheh eleven',
+                        'makcheegheh twelve',
+                        'makcheegheh thirteen',
+                        'makcheegheh fourteen',
+                        'makcheegheh fifteen'
                         ];
 
 // Init the Maek Cha Ki array
