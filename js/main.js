@@ -101,7 +101,7 @@ const maekchaki =      ['makchaah ghi one',
                         ];
 
 // Init the Joo Muhk Maga Ki Bon Soo array
-const joomuhk =      ['joo muhk magai ki bon soo one',
+const joomuhk =        ['joo muhk magai ki bon soo one',
                         'joo muhk magai ki bon soo two',
                         'joo muhk magai ki bon soo three',
                         'joo muhk magai ki bon soo four',
@@ -118,14 +118,37 @@ const joomuhk =      ['joo muhk magai ki bon soo one',
                         'joo muhk magai ki bon soo fifteen'
                         ];
 
-                        // Init the Joong Geup Sohn Mohk Soo array
-const joongup =      ['joon ghup sohn mohk soo one',
+// Init the Joong Geup Sohn Mohk Soo array
+const joongup =        ['joon ghup sohn mohk soo one',
                         'joo ghup sohn mohk soo two',
                         'joo ghup sohn mohk soo three',
                         'joo ghup sohn mohk soo four',
                         'joo ghup sohn mohk soo five',
                         'joo ghup sohn mohk soo six',
                         'joo ghup sohn mohk soo seven'
+                        ];
+
+// Init the Ahp Eue Bohk Soo array
+const aobs =           ['ahp oobok soo one',
+                        'ahp oobok soo two',
+                        'ahp oobok soo three',
+                        'ahp oobok soo four',
+                        'ahp oobok soo five',
+                        'ahp oobok soo six',
+                        'ahp oobok soo seven',
+                        'ahp oobok soo eight',
+                        'ahp oobok soo nine',
+                        'ahp oobok soo ten',
+                        'ahp oobok soo eleven',
+                        'ahp oobok soo twelve',
+                        'ahp oobok soo thirteen',
+                        'ahp oobok soo fourteen',
+                        'ahp oobok soo fifteen',
+                        'ahp oobok soo sixteen',
+                        'ahp oobok soo seventeen',
+                        'ahp oobok soo eighteen',
+                        'ahp oobok soo nineteen',
+                        'ahp oobok soo twenty'
                         ];
 
 function shuffle(arra1) {
@@ -162,6 +185,7 @@ button.addEventListener('click', function(e) {
     var mck2Check = document.getElementById('technique7');
     var jmmCheck = document.getElementById('technique8');
     var jgsCheck = document.getElementById('technique9');
+    var aobsCheck = document.getElementById('technique10');
     if (spkCheck.checked == true) {
         allTechniques = allTechniques.concat(sonpaki);
     }
@@ -188,6 +212,9 @@ button.addEventListener('click', function(e) {
     }
     if (jgsCheck.checked == true) {
         allTechniques = allTechniques.concat(joongup);
+    }
+    if (aobsCheck.checked == true) {
+        allTechniques = allTechniques.concat(aobs);
     }
     console.log(kbsCheck.checked);
     console.log(allTechniques);
