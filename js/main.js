@@ -177,6 +177,22 @@ const dobs =           ['dee oobok soo one',
                         'dee oobok soo twenty-three'
                         ];
 
+// Init the Kwahn Juhl Ki array
+const kjk =         ['kwahn jool ki one',
+                     'kwahn jool ki two',
+                     'kwahn jool ki three',
+                     'kwahn jool ki four',
+                     'kwahn jool ki five',
+                     'kwahn jool ki six',
+                     'kwahn jool ki seven',
+                     'kwahn jool ki eight',
+                     'kwahn jool ki nine',
+                     'kwahn jool ki ten',
+                     'kwahn jool ki eleven',
+                     'kwahn jool ki twelve',
+                     'kwahn jool ki thirteen'
+                    ];
+
 function shuffle(arra1) {
     let ctr = arra1.length;
     let temp;
@@ -213,6 +229,7 @@ button.addEventListener('click', function(e) {
     var jgsCheck = document.getElementById('technique9');
     var aobsCheck = document.getElementById('technique10');
     var dobsCheck = document.getElementById('technique11');
+    var kjkCheck = document.getElementById('technique12');
     if (spkCheck.checked == true) {
         allTechniques = allTechniques.concat(sonpaki);
     }
@@ -245,6 +262,9 @@ button.addEventListener('click', function(e) {
     }
     if (dobsCheck.checked == true) {
         allTechniques = allTechniques.concat(dobs);
+    }
+    if (kjkCheck.checked == true) {
+        allTechniques = allTechniques.concat(kjk);
     }
     console.log(kbsCheck.checked);
     console.log(allTechniques);
