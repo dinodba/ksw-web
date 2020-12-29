@@ -151,6 +151,32 @@ const aobs =           ['app oobok soo one',
                         'app oobok soo twenty'
                         ];
 
+// Init the Dee Eue Bohk Soo array
+const dobs =           ['dee oobok soo one',
+                        'dee oobok soo two',
+                        'dee oobok soo three',
+                        'dee oobok soo four',
+                        'dee oobok soo five',
+                        'dee oobok soo six',
+                        'dee oobok soo seven',
+                        'dee oobok soo eight',
+                        'dee oobok soo nine',
+                        'dee oobok soo ten',
+                        'dee oobok soo eleven',
+                        'dee oobok soo twelve',
+                        'dee oobok soo thirteen',
+                        'dee oobok soo fourteen',
+                        'dee oobok soo fifteen',
+                        'dee oobok soo sixteen',
+                        'dee oobok soo seventeen',
+                        'dee oobok soo eighteen',
+                        'dee oobok soo nineteen',
+                        'dee oobok soo twenty',
+                        'dee oobok soo twenty-one',
+                        'dee oobok soo twenty-two',
+                        'dee oobok soo twenty-three'
+                        ];
+
 function shuffle(arra1) {
     let ctr = arra1.length;
     let temp;
@@ -186,6 +212,7 @@ button.addEventListener('click', function(e) {
     var jmmCheck = document.getElementById('technique8');
     var jgsCheck = document.getElementById('technique9');
     var aobsCheck = document.getElementById('technique10');
+    var dobsCheck = document.getElementById('technique11');
     if (spkCheck.checked == true) {
         allTechniques = allTechniques.concat(sonpaki);
     }
