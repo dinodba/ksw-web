@@ -243,6 +243,9 @@ button.addEventListener('click', function(e) {
     if (aobsCheck.checked == true) {
         allTechniques = allTechniques.concat(aobs);
     }
+    if (dobsCheck.checked == true) {
+        allTechniques = allTechniques.concat(dobs);
+    }
     console.log(kbsCheck.checked);
     console.log(allTechniques);
     const shuffledTechniques = shuffle(allTechniques);
