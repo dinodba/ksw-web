@@ -118,6 +118,16 @@ const joomuhk =      ['joo muhk magai ki bon soo one',
                         'joo muhk magai ki bon soo fifteen'
                         ];
 
+                        // Init the Joong Geup Sohn Mohk Soo array
+const joongup =      ['joon ghup sohn mohk soo one',
+                        'joo ghup sohn mohk soo two',
+                        'joo ghup sohn mohk soo three',
+                        'joo ghup sohn mohk soo four',
+                        'joo ghup sohn mohk soo five',
+                        'joo ghup sohn mohk soo six',
+                        'joo ghup sohn mohk soo seven'
+                        ];
+
 function shuffle(arra1) {
     let ctr = arra1.length;
     let temp;
@@ -151,6 +161,7 @@ button.addEventListener('click', function(e) {
     var mckCheck = document.getElementById('technique6');
     var mck2Check = document.getElementById('technique7');
     var jmmCheck = document.getElementById('technique8');
+    var jgsCheck = document.getElementById('technique9');
     if (spkCheck.checked == true) {
         allTechniques = allTechniques.concat(sonpaki);
     }
@@ -174,6 +185,9 @@ button.addEventListener('click', function(e) {
     }
     if (jmmCheck.checked == true) {
         allTechniques = allTechniques.concat(joomuhk);
+    }
+    if (jgsCheck.checked == true) {
+        allTechniques = allTechniques.concat(joongup);
     }
     console.log(kbsCheck.checked);
     console.log(allTechniques);
